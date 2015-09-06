@@ -57,9 +57,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国移动" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGs-9d-vUh" userLabel="lb_builder">
                                 <rect key="frame" x="148" y="99" width="344" height="20.5"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="344" id="cIc-VG-T4T"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -104,7 +101,7 @@
                         <constraints>
                             <constraint firstItem="KD3-EC-tOD" firstAttribute="width" secondItem="ro1-6F-rsJ" secondAttribute="width" id="33M-my-Mo3"/>
                             <constraint firstItem="ro1-6F-rsJ" firstAttribute="centerY" secondItem="WGs-9d-vUh" secondAttribute="centerY" id="BlN-hK-wGS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WGs-9d-vUh" secondAttribute="trailing" constant="92" id="Cd6-Dr-1IE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WGs-9d-vUh" secondAttribute="trailing" constant="100" id="Cd6-Dr-1IE"/>
                             <constraint firstItem="gWJ-td-16e" firstAttribute="leading" secondItem="tA2-IQ-qVX" secondAttribute="leadingMargin" constant="120" id="IIs-Gi-gff"/>
                             <constraint firstAttribute="centerX" secondItem="gWJ-td-16e" secondAttribute="centerX" id="MZZ-Ge-ccj"/>
                             <constraint firstItem="KD3-EC-tOD" firstAttribute="top" secondItem="ro1-6F-rsJ" secondAttribute="bottom" constant="41.5" id="NZw-FX-A3j"/>
