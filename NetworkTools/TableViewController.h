@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  NetworkTools
 //
 //  Created by passol on 15/9/7.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TableViewController : UITableViewController
+
 
 
 @end
-
