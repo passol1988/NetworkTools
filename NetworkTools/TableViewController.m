@@ -22,7 +22,8 @@
 {
     [super viewDidLoad];
     
-    self.array = [@[@"reachability", @"ping"] mutableCopy];
+    self.title = @"网络工具";
+    self.array = [@[@"reach", @"ping"] mutableCopy];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellid"];
 }
 
@@ -34,14 +35,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellid"];
-    cell.textLabel.text = self.array[indexPath.section];
+    cell.textLabel.text = self.array[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ReachViewController *vc = [sb instantiateViewControllerWithIdentifier:@"ReachViewController"];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:self.array[indexPath.row]];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

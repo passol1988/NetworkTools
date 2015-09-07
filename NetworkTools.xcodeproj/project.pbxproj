@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B84691641B9D4E75009CED62 /* PingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84691631B9D4E75009CED62 /* PingViewController.m */; };
+		B84691691B9D55B8009CED62 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = B84691661B9D55B8009CED62 /* SimplePing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B846916A1B9D55B8009CED62 /* SimplePingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B84691681B9D55B8009CED62 /* SimplePingHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B86D28921B9CC3F3002FBD6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B86D28911B9CC3F3002FBD6C /* main.m */; };
 		B86D28951B9CC3F3002FBD6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B86D28941B9CC3F3002FBD6C /* AppDelegate.m */; };
 		B86D289B1B9CC3F3002FBD6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86D28991B9CC3F3002FBD6C /* Main.storyboard */; };
@@ -29,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B84691621B9D4E75009CED62 /* PingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingViewController.h; sourceTree = "<group>"; };
+		B84691631B9D4E75009CED62 /* PingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingViewController.m; sourceTree = "<group>"; };
+		B84691651B9D55B8009CED62 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		B84691661B9D55B8009CED62 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		B84691671B9D55B8009CED62 /* SimplePingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePingHelper.h; sourceTree = "<group>"; };
+		B84691681B9D55B8009CED62 /* SimplePingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePingHelper.m; sourceTree = "<group>"; };
 		B86D288C1B9CC3F3002FBD6C /* NetworkTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86D28901B9CC3F3002FBD6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B86D28911B9CC3F3002FBD6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +104,8 @@
 				B86D28991B9CC3F3002FBD6C /* Main.storyboard */,
 				B86D28BC1B9CC76A002FBD6C /* ReachViewController.h */,
 				B86D28BD1B9CC76A002FBD6C /* ReachViewController.m */,
+				B84691621B9D4E75009CED62 /* PingViewController.h */,
+				B84691631B9D4E75009CED62 /* PingViewController.m */,
 				B86D289C1B9CC3F3002FBD6C /* Images.xcassets */,
 				B86D289E1B9CC3F3002FBD6C /* LaunchScreen.xib */,
 				B86D288F1B9CC3F3002FBD6C /* Supporting Files */,
@@ -133,6 +144,10 @@
 			children = (
 				B86D28B91B9CC673002FBD6C /* Reachability.h */,
 				B86D28BA1B9CC673002FBD6C /* Reachability.m */,
+				B84691651B9D55B8009CED62 /* SimplePing.h */,
+				B84691661B9D55B8009CED62 /* SimplePing.m */,
+				B84691671B9D55B8009CED62 /* SimplePingHelper.h */,
+				B84691681B9D55B8009CED62 /* SimplePingHelper.m */,
 			);
 			name = vendor;
 			sourceTree = "<group>";
@@ -241,6 +256,9 @@
 				B86D28BF1B9CC76A002FBD6C /* ReachViewController.m in Sources */,
 				B86D28B71B9CC42A002FBD6C /* TableViewController.m in Sources */,
 				B86D28BB1B9CC673002FBD6C /* Reachability.m in Sources */,
+				B84691641B9D4E75009CED62 /* PingViewController.m in Sources */,
+				B846916A1B9D55B8009CED62 /* SimplePingHelper.m in Sources */,
+				B84691691B9D55B8009CED62 /* SimplePing.m in Sources */,
 				B86D28921B9CC3F3002FBD6C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +458,7 @@
 				B86D28B11B9CC3F3002FBD6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B86D28B21B9CC3F3002FBD6C /* Build configuration list for PBXNativeTarget "NetworkToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +467,7 @@
 				B86D28B41B9CC3F3002FBD6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
