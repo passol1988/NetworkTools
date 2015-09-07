@@ -6,6 +6,41 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Detect View Controller-->
+        <scene sceneID="Hk2-K5-jp4">
+            <objects>
+                <viewController storyboardIdentifier="detect" id="Qhc-rw-Viu" customClass="DetectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="968-Uy-KnY"/>
+                        <viewControllerLayoutGuide type="bottom" id="OVR-FP-eUo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eUM-rJ-eK0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBJ-Bf-gua">
+                                <rect key="frame" x="36" y="40" width="248" height="488"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oBJ-Bf-gua" firstAttribute="leading" secondItem="eUM-rJ-eK0" secondAttribute="leadingMargin" constant="20" id="CHQ-bW-dxt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oBJ-Bf-gua" secondAttribute="trailing" constant="20" id="UIR-Tw-e1a"/>
+                            <constraint firstItem="oBJ-Bf-gua" firstAttribute="top" secondItem="968-Uy-KnY" secondAttribute="bottom" constant="20" id="XZH-WE-oLg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="oBJ-Bf-gua" secondAttribute="bottom" constant="40" id="aX4-RY-zV1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="oBJ-Bf-gua" id="cxX-7d-Tbe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWs-0t-yvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="397"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="o5Y-M5-5Mw">
             <objects>
@@ -154,11 +189,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcc-NJ-GuT">
-                                <rect key="frame" x="0.0" y="0.0" width="26" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7m9-VT-iO0">
                                 <rect key="frame" x="274" y="28" width="30" height="30"/>
                                 <state key="normal" title="dig">
@@ -186,16 +216,6 @@
                                     <action selector="action_choose:" destination="BGu-4p-L4P" eventType="touchUpInside" id="2uD-GV-irI"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="auP-xo-iwX">
-                                <rect key="frame" x="0.0" y="0.0" width="26" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9Q-Tf-F65">
-                                <rect key="frame" x="0.0" y="0.0" width="26" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="域名或者IP" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NF5-mS-ySV">
                                 <rect key="frame" x="26" y="132" width="214" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

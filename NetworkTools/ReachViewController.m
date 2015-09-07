@@ -32,6 +32,8 @@
                                                object:nil];
     
     self.telephonyInfo = [[CTTelephonyNetworkInfo alloc] init];
+    if (floorf(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1){
+
     [NSNotificationCenter.defaultCenter addObserverForName:CTRadioAccessTechnologyDidChangeNotification
                                                     object:nil
                                                      queue:nil
@@ -39,6 +41,7 @@
      {
          NSLog(@"New Radio Access Technology: %@", self.telephonyInfo.currentRadioAccessTechnology);
      }];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated

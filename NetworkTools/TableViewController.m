@@ -23,7 +23,7 @@
     [super viewDidLoad];
     
     self.title = @"网络工具";
-    self.array = [@[@"reach", @"ping"] mutableCopy];
+    self.array = [@[@"reach", @"ping", @"detect"] mutableCopy];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellid"];
 }
 
