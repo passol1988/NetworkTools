@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>26200EF1-3FB3-4AC1-8A74-73F658D3332D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NetworkTools</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22F8E3D43BA1309CC6B5AEB225D4183584BA7509</key>
+		<string>https://github.com/passol1988/NetworkTools.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NetworkTools.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22F8E3D43BA1309CC6B5AEB225D4183584BA7509</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/passol1988/NetworkTools.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>22F8E3D43BA1309CC6B5AEB225D4183584BA7509</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22F8E3D43BA1309CC6B5AEB225D4183584BA7509</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NetworkTools</string>
+		</dict>
+	</array>
+</dict>
+</plist>
